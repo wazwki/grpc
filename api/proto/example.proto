@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package examplepb;
+
+option go_package = "examplepb/";
+
+service ExampleService {
+  rpc ExampleMethod(ExampleRequest) returns (ExampleResponse);
+}
+
+message ExampleRequest {
+  string something = 1;
+}
+
+message ExampleResponse {
+  string something = 1;
+}
